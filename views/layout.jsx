@@ -29,7 +29,7 @@ function Layout(props) {
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
-        <Header
+        {/* <Header
           mainBreadcrumbs="Text to Speech"
           mainBreadcrumbsUrl="https://www.ibm.com/watson/services/text-to-speech/"
           subBreadcrumbs="Text to Speech Demo"
@@ -44,16 +44,16 @@ function Layout(props) {
           version="GA"
           serviceIcon="/images/service-icon.svg"
           description={DESCRIPTION}
-        />
-        <div className="_container _container_large gdpr-info">
+        /> */}
+        {/* <div className="_container _container_large gdpr-info">
           {GDPR_INFO}
-        </div>
-        <div className="_container _container_large gdpr-info">
+        </div> */}
+        {/* <div className="_container _container_large gdpr-info">
           By using this application, you agree to the &nbsp;
           <a target="_blank" rel="noreferrer noopener" href={TERMS_OF_USE_URL}>
-                Terms of Use
+            Terms of Use
           </a>
-        </div>
+        </div> */}
         <div id="root">
           {children}
         </div>

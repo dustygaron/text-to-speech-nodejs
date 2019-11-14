@@ -209,6 +209,8 @@ export default class Demo extends Component {
     );
   }
 
+
+  // Render for voice dropdown & text box
   render() {
     const {
       ssml, ssml_voice, voice, loading, hasAudio, ssmlLabel, error, text,
@@ -216,7 +218,7 @@ export default class Demo extends Component {
     return (
       <section className="_container _container_large">
         <div className="row">
-          <h2 className="base--h2 title">
+          {/* <h2 className="base--h2 title">
             Input Text
           </h2>
           <p className="base--p normalfont">
@@ -231,7 +233,7 @@ export default class Demo extends Component {
               Watson TTS blog
             </a>
             &nbsp;for more information.
-          </p>
+          </p> */}
           <div className="voice-input">
             <select
               name="voice"
@@ -332,16 +334,16 @@ class ConditionalSpeakButton extends Component {
         Speak
       </button>
     ) : (
-      <button
-        type="button"
-        onClick={onClick}
-        className="base--button speak-button speak-disabled"
-        title="Only available on Chrome and Firefox"
-        disabled
-      >
-        Speak
+        <button
+          type="button"
+          onClick={onClick}
+          className="base--button speak-button speak-disabled"
+          title="Only available on Chrome and Firefox"
+          disabled
+        >
+          Speak
       </button>
-    );
+      );
   }
 }
 
